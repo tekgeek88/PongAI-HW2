@@ -7,13 +7,13 @@ function Entity() {
     this.height = 0;
 
     // All entities can have speed and direction
-    this.xVelcoity = 0;
+    this.xVelocity = 0;
     this.yVelocity = 0;
 }
 
 
 Entity.prototype.update = function () {
-    this.x += this.xVelcoity;
+    this.x += this.xVelocity;
     this.y += this.yVelocity;
 }
 

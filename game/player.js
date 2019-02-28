@@ -23,9 +23,6 @@ function Player(game) {
 
     // Now we need to attach the player to the DOM
     game.canvas.append(player);
-
-
-
 }
 
 Player.prototype = Object.create(Paddle.prototype);
@@ -41,9 +38,9 @@ Player.prototype.draw = function() {
 Player.prototype.update = function() {
     var that = this;
     var speed = 10;
-    if (self.game.keyPressed.up) {
+    if (that.game.keyPressed.up) {
         that.yVelocity = -speed;
-    } else if (self.game.keyPressed.down) {
+    } else if (that.game.keyPressed.down) {
         that.yVelocity = speed;
     } else {
         // Stop the player from moving.
