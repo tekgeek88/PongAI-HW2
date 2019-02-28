@@ -7,26 +7,43 @@ bod {
     width: 640px;
     height: 480px;
     background-color: black;
+    text-align: center;
+    padding: 10px;
+    padding-top: 25px;
 }
 
-#score_player1,
-#score_player2 {
-    position: absolute;
-    padding: 5px;
-    border-radius: 5px;
+#score_panel {
+    margin-top: 100px;
+    width: 640px;
+    height: 30px;
+    padding-top: 25px;
+   
+
 }
 
 #score_player1 {
-    left: 150px;
+    /* left: 1500px; */
     top: 50px;
     background-color: greenyellow; 
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 10px;
+    
 }
 
 #score_player2 {
-    left: 290px;
+    left: 0px;
     top: 50px;
     background-color: blue; 
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: 10px;
 }
 
 #player,
@@ -47,3 +64,5 @@ bod {
     background-color: red;
     border-radius: 50%;
 }
+
+/* * { border: 1px solid red; } */
