@@ -9,6 +9,6 @@ function Score (game) {
 }
 
 Score.prototype.draw = function() {
-    this.score_player1.innerHTML = "Me: " + this.game.player.score;
+    this.score_player1.innerHTML = "PLAYER 1: " + this.game.player.score;
     this.score_player2.innerHTML = "BOT: " + this.game.bot.score;
 }

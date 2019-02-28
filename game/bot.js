@@ -40,7 +40,7 @@ Bot.prototype.update = function () {
     let that = this;
 
     // Bot will follow the boll
-    if (that .y < that.game.ball.y) {
+    if (that.y < that.game.ball.y) {
         that.yVelocity = that.speed;
     } else if (that.y > that.game.ball.y) {
         that.yVelocity = -that.speed;
