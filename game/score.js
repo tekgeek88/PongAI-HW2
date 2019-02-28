@@ -1,14 +1,12 @@
-function Score (game) {
-    this.game = game;
-    this.score_player1 = document.getElementById("score_player1");
-    this.score_player2 = document.getElementById("score_player2");
-    
-    this.score_player1.style.left = game.width / 2 - 100 + "px";  // game.width * 3/8;
-    this.score_player1.style.top = 50 + "px";
-    
+class Score {
+    constructor(game) {
+        this.game = game;
+        this.score_player1 = document.getElementById("score_player1");
+        this.score_player2 = document.getElementById("score_player2");
+    }
+    draw() {
+        this.score_player1.innerHTML = "PLAYER 1: " + this.game.player.score;
+        this.score_player2.innerHTML = "BOT: " + this.game.bot.score;
+    }
 }
 
-Score.prototype.draw = function() {
-    this.score_player1.innerHTML = "PLAYER 1: " + this.game.player.score;
-    this.score_player2.innerHTML = "BOT: " + this.game.bot.score;
-}
