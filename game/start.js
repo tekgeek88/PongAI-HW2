@@ -3,7 +3,8 @@ var canvas = document.getElementById("game");
 
 
 game.entities = [
-    game.player = new Player(game)
+    game.player = new Player(game),
+    game.bot = new Bot(game) 
 ];
 
 
